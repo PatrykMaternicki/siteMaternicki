@@ -1,0 +1,76 @@
+@import './Variables/base-variables.scss';
+@import './Mixins/mixins.scss';
+@import './Animations/animations.scss';
+// @import
+
+.app{
+  width:40%;
+}
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 150px 0 0;
+  border-color: $bg-color-triangle transparent transparent transparent;
+  position:fixed;
+
+}
+.triangle:hover, .triangle:focus{
+  border-color: $bg-color-triangle-hover transparent transparent transparent;
+}
+
+.triangle-text{
+  display:none;
+}
+.triangle:hover .triangle-text{
+  font-family: 'Comfortaa', cursive;
+  display:inline-block;
+  color:$font-color-text-welcome;
+  position:fixed;
+  top:45px;
+  left:120px;
+  font-size:1.5vw;
+}
+
+.triangle-icon{
+position: relative;
+top: -130px;
+left: 10px;
+}
+.app-text{
+  font-family: 'Comfortaa', cursive;
+  color: $font-color-welcome;
+  font-size:3vw;
+}
+.app-text--circle{
+vertical-align: middle;
+animation: clip 0.7s 1 linear;
+animation-fill-mode: forwards;
+}
+
+.app-text--anotherFont{
+  font-family:'Square Dot Digital-7';
+  font-size:2vw;
+  color: $font-color-anotherText;
+  font-weight: 600;
+  vertical-align: super;
+  padding-left:10px;
+}
+.app-text-specialization{
+    font-family:'Square Dot Digital-7';
+    font-size:1.3vw;
+    font-weight:600;
+    transform:translate(60px,-15px);
+}
+.app-text-specialization::first-letter{
+  font-size:1.8vw;
+}
+.app-text-imageContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    float: right;
+}
+.app-button{
+  float:right;
+}

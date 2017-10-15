@@ -1,0 +1,14 @@
+{
+  "name": "mysite-react-redux",
+  "version": "0.0.1",
+  "description": "my site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patryk Maternicki",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  }
+}
