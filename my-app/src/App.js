@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import WelcomeContainer from './Containers/welcomeContainer.js';
+import HomeContainer from './Containers/homeContainer.js';
 import './CSS/style.min.css';
 import circle from './Images/circle-m.png'
 import IconStorage from './imageStorage.js';
 import Icon from './Containers/Components/Icon.js';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
 class App extends Component {
 
   constructor(props){
